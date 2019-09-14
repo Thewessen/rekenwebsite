@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link href="mystyle.css" rel="stylesheet" type="text/css">
+		<meta name="description" content="Rekenvaardigheid eerste klas IJburg 1, deelschool 2 en 3. Gemaakt door Samuel Thewessen, expert rekenen en wiskunde.">
+		<meta name="keywords" content="rekenvaardigheid,ijburg 1,eerste klas,E2,E3,samuel,thewessen">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<title>Rekenvaardigheid</title>
+		<script type="text/javascript">
+		function showhide(x) {
+			$("article").remove();
+			for (i=1; i<5; i++) {
+				if (i == x) {
+					$("#sub" + i).css("display", "inline");
+				  }
+				else {
+					$("#sub" + i).css("display","none");
+			  };
+			};
+		};
+		
+		$(document).ready(function() {
+			$('ul li ul li').click(function()	{
+				$('li').removeClass("active");
+				$(this).addClass("active");
+				});
+			});
+	</script>
+	</head>
+	<body class="homeDark">
+	<header>
+		<a href="index.html"><img src='RV.jpg' alt="RV"></a>
+		<h1>Rekenvaardigheid</h1>
+	</header>
+	<nav class="side">
+	<ul>
+		<li class="homeDark hover"><a href="index.html"><h5>Home</h5></a></li> 
+		<li class="getalDark hover"><a href="getallen/getallen.html" target="side" onclick="showhide(1)"><h5>Getallen</h5></a></li>
+		<li id="sub1" class="sub" style="display:none"><ul class="getalLight">
+				<li class="hover"><a href="getallen/optellen.html" target="side"><h6>Optellen</h6></a></li>
+				<li class="hover"><a href="getallen/aftrekken.html" target="side"><h6>Aftrekken</h6></a></li>
+				<li class="hover"><a href="getallen/vermenigvuldigen.html" target="side"><h6>Vermenigvuldigen</h6></a></li>
+				<li class="hover"><a href="getallen/delen.html" target="side"><h6>Delen</h6></a></li>
+				<li class="hover"><a href="getallen/delenmetrest.html" target="side"><h6>Delen met rest</h6></a></li>
+				<li class="hover"><a href="getallen/doorelkaar.html" target="side"><h6>Door elkaar</h6></a></li>
+				<li class="hover"><a href="getallen/toets.html" target="side"><h6>Toets</h6></a></li>
+			</ul></li>
+		<li class="breukDark hover"><a href="breuken/breuken.html" target="side" onclick="showhide(2)"><h5>Breuken</h5></a></li>
+		<li id="sub2" class="sub" style="display:none"><ul class="breukLight">
+				<li class="hover"><a href="breuken/tellernoemer.html" target="side"><h6>Teller/Noemer</h6></a></li>
+				<li class="hover"><a href="breuken/grootte.html" target="side"><h6>Groter dan...</h6></a></li>
+				<li class="hover"><a href="breuken/vereenvoudigen.html" target="side"><h6>Vereenvoudigen</h6></a></li>
+				<li class="hover"><a href="breuken/gelijknamig.html" target="side"><h6>Gelijknamig</h6></a></li>
+				<li class="hover"><a href="breuken/optellen.html" target="side"><h6>Optellen</h6></a></li>
+				<li class="hover"><a href="breuken/aftrekken.html" target="side"><h6>Aftrekken</h6></a></li>
+				<li class="hover"><a href="breuken/vermenigvuldigen.html" target="side"><h6>Vermenigvuldigen</h6></a></li>
+				<li class="hover"><a href="breuken/delen.html" target="side"><h6>Delen</h6></a></li>
+				<li class="hover"><a href="breuken/doorelkaar.html" target="side"><h6>Door elkaar</h6></a></li>
+			</ul></li>
+		<li class="verhoudDark hover"><a href="verhoudingen/verhoudingen.html" target="side" onclick="showhide(3)"><h5>Verhoudingen</h5></a></li>
+		<li id="sub3" class="sub" style="display:none"><ul class="verhoudLight">
+				<li class="hover"><a href="verhoudingen/schrijfwijze.html" target="side"><h6>Schrijfwijze</h6></a></li>
+				<li class="hover"><a href="verhoudingen/alsbreuk.html" target="side"><h6>Als breuk</h6></a></li>
+				<li class="hover"><a href="verhoudingen/alskommagetal.html" target="side"><h6>Als kommagetal</h6></a></li>
+				<li class="hover"><a href="verhoudingen/procenten.html" target="side"><h6>Procenten</h6></a></li>
+				<li class="hover"><a href="verhoudingen/alsprocent.html" target="side"><h6>Als procent</h6></a></li>
+				<li class="hover"><a href="verhoudingen/procentvan.html" target="side"><h6>Procent van ...</h6></a></li>
+			</ul></li>
+		<li class="meetDark hover"><a href="meten/meten.html" target="side" onclick="showhide(4)"><h5>Maten</h5></a></li>
+			<li id="sub4" class="sub" style="display:none"><ul class="meetLight">
+			</ul></li>
+	</ul>
+	</nav>
+	<article>
+	<div class="inhoud getalDark">
+	<a href="getallen/getallen.html" target="side" onclick="showhide(1)">
+		<h4>Getallen</h4>
+		<div class="img getalLight">
+			<img src="icons/getallen.png" alt="link naar getallen">
+		</div>
+	</a>
+	</div>
+	<div class="inhoud breukDark">
+	<a href="breuken/breuken.html" target="side" onclick="showhide(2)">
+		<h4>Breuken</h4>
+		<div class="img breukLight">
+			<img src="icons/breuken.png" alt="link naar breuken">
+		</div>
+	</a>
+	</div>
+	<div class="inhoud verhoudDark">
+	<a href="verhoudingen/verhoudingen.html" target="side" onclick="showhide(3)">
+		<h4>Verhoudingen</h4>
+		<div class="img verhoudLight">
+			<img src="icons/verhoudingen.png" alt="link naar verhoudingen">
+		</div>
+	</a>
+	</div>
+	<div class="inhoud meetDark">
+	<a href="meten/meten.html" target="side" onclick="showhide(4)">
+		<h4>Maten</h4>
+		<div class="img meetLight">
+			<img src="icons/maten.png" alt="link naar maten">
+		</div>
+	</a>
+	</div>
+	</article>
+	<iframe class="side" src="" name="side"></iframe>
+	<footer>
+		Vragen? Mail naar: <a href="mailto:samuelthewessen@ijburgcollege.nl">samuelthewessen@ijburgcollege.nl</a>
+	</footer>
+	</body>
+</html>

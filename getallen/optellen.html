@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link href="../mystyle.css" rel="stylesheet" type="text/css">
+		<meta name="description" content="Oefening voor het optellen van getallen">
+		<meta name="keywords" content="optellen,getallen,oefening,kladpapier,cijferend,onder elkaar,invuloefening,javascript,interactief">
+		<title>Getallen optellen</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+		<script src="../js/functions.js" type="text/javascript"></script>
+		<script src="../js/getallen.js" type="text/javascript"></script>
+	</head>
+	<body class="getalLight">
+	<nav class="top">
+	<ul>
+		<li><a href="optellen.html"><img src="../icons/oefening.png" class="large" alt="Oefening"></a></li> 
+		<li><a href="optellenuitleg.html"><img src="../icons/vraag.png" class="large" alt="Vraag"></a></li>
+		<li><a href="optellenvideo.html"><img src="../icons/filmpje.png" class="large" alt="Filmpje"></a></li>
+	</ul>
+	</nav>
+	<article class="halfwidth">
+		<h3>Getallen optellen</h3>
+		<div id="Uitleg"></div>
+		<div id="Questions" class="math" style="font-size:21px;"></div>
+		<div id="Voorbeeld" class="voorbeeld"></div>
+	</article>
+	<div id="buttons" class="buttons threecolumns" style="display:none">
+		<button type="button" class="button" onclick="UserInput(1)">1</button>
+		<button type="button" class="button" onclick="UserInput(4)">4</button>
+		<button type="button" class="button" onclick="UserInput(7)">7</button>
+		<button type="button" class="button" onclick="UserInput(9)" style="visibility:hidden">9</button>
+		<button type="button" class="button" onclick="UserInput(2)">2</button>
+		<button type="button" class="button" onclick="UserInput(5)">5</button>
+		<button type="button" class="button" onclick="UserInput(8)">8</button>
+		<button type="button" class="button" onclick="UserInput(0)">0</button>
+		<button type="button" class="button" onclick="UserInput(3)">3</button>
+		<button type="button" class="button" onclick="UserInput(6)">6</button>
+		<button type="button" class="button" onclick="UserInput(9)">9</button>
+		<button type="button" class="button" onclick="UserInput(9)" style="visibility:hidden">9</button>
+		<hr class="allcolumns">
+		<button type="button" class="button allcolumns" onclick="Wissen()"><img class="medium" src="../icons/wis.png" alt="Wis"></button> 
+		<button type="button" class="button allcolumns" onclick="Validate()"><img class="medium" src="../icons/question.png" alt="Check"></button> 
+	</div>
+	<div id="ok" class="buttons" style="display:none">
+		<button type="button" class="button" onclick="OK()">OK</button>
+	</div>
+	<div id="start" class="buttons" style="display:none">
+		<button type="button" class="button" onclick="Start()">Start</button>
+	</div>
+	<div id="niveaus" class="niveau">
+	</div>		
+	<script type="text/javascript">
+		Intro("optellen");
+	</script>
+	</body>
+</html>
